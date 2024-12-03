@@ -1,0 +1,57 @@
+.container {
+  /* 배경색 그라디언트: 위에서 아래로 블루에서 퍼플로 부드럽게 전환 */
+  background: linear-gradient(to bottom, #669BC7, #CBBDDB);
+  /* Flexbox 레이아웃 사용: 세로 방향 정렬 */
+  display: flex;
+  flex-direction: column;
+  /* 자식 요소를 중앙 정렬 */
+  align-items: center;
+}
+
+.traumaSection {
+  /* 섹션의 너비를 전체 화면에 맞춤 */
+  width: 100%; /* w-full */
+  /* 위아래 마진 추가 */
+  margin: 2rem 0; /* my-8 */
+  /* 텍스트를 중앙 정렬 */
+  text-align: center;
+  /* 구분선 추가를 위한 상대 위치 지정 */
+  position: relative;
+  /* 구분선과 내용 사이의 간격 */
+  padding-bottom: 2rem;
+  /* 섹션 하단에 구분선 추가 */
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.title {
+  /* 제목 텍스트 크기 설정 */
+  font-size: 1.5rem;
+  /* 텍스트를 볼드체로 설정 */
+  font-weight: bold;
+  /* 제목과 다음 요소 사이의 간격 설정 */
+  margin-bottom: 1rem;
+}
+
+.traumaGrid {
+  /* Grid 레이아웃 사용: 카드들을 그리드 형태로 배치 */
+  display: grid;
+  /* 반응형 그리드: 카드가 최소 80px이고 가능한 공간만큼 확장 */
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  /* 카드 간격 설정 */
+  gap: 3rem; /* 카드 간격 */
+  /* 그리드 컨테이너의 최대 너비를 화면의 80%로 제한 */
+  max-width: 80%; /* 컨테이너 최대 너비 */
+  /* 컨테이너 너비를 그리드에 맞춤 */
+  width: 100%; /* 80%를 가득 채우도록 설정 */
+  /* 컨테이너를 화면 가운데 정렬 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.landingSection {
+  /* 상단 여백 */
+  margin-top: 2rem;
+  /* 하단 여백 */
+  margin-bottom: 2rem;
+  /* 텍스트를 중앙 정렬 */
+  text-align: center;
+}

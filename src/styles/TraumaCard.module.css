@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    padding: 5vw; /* 반응형 패딩 */
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 10vw; /* 반응형 이미지 크기 */
+    height: 10vw;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .imageWrapper {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .card {
+      padding: 1rem; /* 작은 화면에서 고정된 패딩 */
+    }
+  }
+  
+  .text {
+    font-size: 3vw; /* 반응형 텍스트 크기 */
+    font-weight: 500;
+  }
+  
+  @media (min-width: 640px) {
+    .text {
+      font-size: 1rem; /* 고정된 텍스트 크기 */
+    }
+  }
+  

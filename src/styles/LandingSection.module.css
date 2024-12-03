@@ -1,0 +1,46 @@
+.landingSection {
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2rem 0; /* my-8 */
+    padding: 1rem; /* p-4 */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; /* mx-auto */
+  }
+  
+  .text {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .heading {
+    font-size: 5vw;
+    font-weight: bold;
+    white-space: pre-line;
+    line-height: 1; /* 줄 간격을 기본값보다 줄임 */
+  }
+  
+  .subheading {
+    font-size: 3vw;
+    font-weight: bold;
+    white-space: pre-line;
+    line-height: 1.2; /* 줄 간격을 기본값보다 줄임 */
+  }
+  
+  .imageContainer {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #ccc; /* border-b border-gray-300 */
+    width: 100%;
+  }
+  

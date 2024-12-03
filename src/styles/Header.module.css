@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* gap-6 */
+    padding-right: 5%; /* pr-[5%] */
+  }
+  
+  .button {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+  }
+  
+  .date {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+  }
+  

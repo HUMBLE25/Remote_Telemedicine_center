@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #669BC7, #CBBDDB);
+}
+
+.section {
+  font-family: 'Arial', sans-serif;
+  width: 80%;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.result {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  white-space: pre-wrap; /* 줄바꿈과 공백을 유지 */
+}
+
+.noResult {
+  font-size: 1.2rem;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.getemail {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* 섹션을 중앙 정렬 */
+  text-align: center;
+}
+
+.emailContainer {
+  width: 90%; /* 부모 컨테이너의 너비 */
+  max-width: 500px; /* 최대 너비 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 버튼과 입력 필드 간격 */
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.emailInput {
+  flex: 3; /* 입력 필드가 버튼보다 3배 더 넓게 */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: transparent;
+  height: 2.5rem; /* 일관된 높이 */
+  min-width: 0; /* 작은 화면에서도 축소 허용 */
+}
+
+.sendButton {
+  flex: 1; /* 버튼의 너비 비율 */
+  color: white;
+  background-color: transparent; /* 기본 배경 투명 */
+  padding: 0.5rem;
+  border: 1px solid #005f99;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2.5rem; /* 입력 필드와 동일한 높이 설정 */
+  min-width: 80px; /* 버튼이 작아지지 않도록 최소 너비 설정 */
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* 부드러운 전환 */
+}
+
+.sendButton:hover {
+  background-color: #007acc; /* 배경색 변경 */
+  color: white; /* 텍스트 색상 변경 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .emailContainer {
+    width: 100%; /* 모바일에서는 더 넓게 */
+  }
+
+  .emailInput {
+    font-size: 0.9rem; /* 작은 화면에서 텍스트 크기 줄이기 */
+  }
+
+  .sendButton {
+    font-size: 0.9rem; /* 작은 화면에서 버튼 텍스트 크기 줄이기 */
+    min-width: 70px; /* 최소 크기 조정 */
+  }
+}
