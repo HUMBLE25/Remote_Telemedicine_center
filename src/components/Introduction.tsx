@@ -8,7 +8,7 @@ const teamMembers = [
   },
   {
     name: 'KimSeyeon',
-    email: 'kimseyeon@example.com',
+    email: 'seyeon680895@gmail.com',
     github: 'https://github.com/snowball03',
   },
 ];

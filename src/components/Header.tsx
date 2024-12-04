@@ -24,9 +24,11 @@ export default function Header() {
     <header className={styles.header}>
       {/* 우측 정렬된 요소 */}
       <div className={styles.headerRight}>
-        <button className={styles.button}>LOGIN</button>
+        {/* <button className={styles.button}>LOGIN</button>  */}
+        {/* 로그인 기능 구현전까지는 보류 */}
         <p className={styles.date}>DATE: {currentDate}</p>
       </div>
     </header>
+    
   );
 }

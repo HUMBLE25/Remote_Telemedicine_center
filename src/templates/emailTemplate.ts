@@ -33,6 +33,7 @@ export const diagnosisEmailTemplate = (diagnosisResult: string) => `
         font-size: 16px;
         line-height: 1.6;
         color: #333;
+        white-space: pre-line; /* 줄바꿈과 공백을 유지 */
       }
       .footer {
         margin-top: 20px;
@@ -45,11 +46,11 @@ export const diagnosisEmailTemplate = (diagnosisResult: string) => `
   <body>
     <div class="email-container">
       <div class="header">
-        <img src="" alt="Logo" />
+        <img src="https://www.remotetraumacenter.site/favicon.ico" alt="Logo" />
         <h1>진단 결과</h1>
       </div>
       <div class="content">
-        ${diagnosisResult}
+        ${diagnosisResult.replace(/\n/g, "<br>")}
       </div>
       <div class="footer">
         &copy; 2024 RTC. All rights reserved.
